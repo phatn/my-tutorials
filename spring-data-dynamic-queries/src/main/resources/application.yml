@@ -1,0 +1,16 @@
+spring:
+  application:
+  name: "Spring Data Dynamic Queries"
+  datasource:
+    url: "jdbc:mysql://localhost:3306/retailers"
+    username: "tcsuser"
+    password: "p@ssword"
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    properties:
+      hibernate:
+        format_sql: true

@@ -1,0 +1,14 @@
+### Search all
+GET http://localhost:8080/products
+
+### Filter by productLine
+GET http://localhost:8080/products?productLine=Motorcycles
+
+### Filter by productLine and productVendor
+GET http://localhost:8080/products?productLine=Motorcycles&productVendor=Highway 66 Mini Classics
+
+### Filter by productLine and productScale
+GET http://localhost:8080/products?productLine=Motorcycles&productScale=1:10
+
+### Filter by productLine, productScale and productVendor
+GET http://localhost:8080/products?productLine=Motorcycles&productScale=1:10&productVendor=Highway 66 Mini Classics
