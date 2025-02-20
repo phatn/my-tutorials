@@ -1,0 +1,13 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: mygateway
+
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:9000/realms/myrealm
+          jwk-set-uri: http://localhost:9000/realms/myrealm/protocol/openid-connect/certs
+
